@@ -2,5 +2,9 @@ from queueclass import Queue
 
 FIFO = Queue("1", "2")
 FIFO.enqueue("3")
-print(len(FIFO))
+FIFO.enqueue("4")
+print("Queue Count:",len(FIFO))
+
+for i in FIFO:
+    print("Current in line:",i)
 
