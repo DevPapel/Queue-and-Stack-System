@@ -1,0 +1,1 @@
+from qsClass import PriorityQueue
