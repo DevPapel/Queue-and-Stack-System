@@ -4,6 +4,10 @@ bounceSize = 3
 
 que = input("Enter your name to line up the queue: ")
 
-queList = []
-if len(queList) < 3:
-    print("test")
+queList = [1,2,3]
+if len(queList) < bounceSize:
+    queList.append(que)
+else:
+    FIFO = Queue(queList)
+    print(len(queList))
+    print(len(FIFO))
