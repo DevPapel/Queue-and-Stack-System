@@ -31,7 +31,6 @@ class PriorityQueue:
         self._counter = count()
 
     def enqueue_with_priority(self, priority, value):
-        heappush(self._elements, (-priority, value))
         element = (-priority, next(self._counter), value)
         heappush(self._elements, element)
 

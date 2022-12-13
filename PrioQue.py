@@ -15,8 +15,5 @@ messages.enqueue_with_priority(Neutral, "you'd like to meet")
 messages.enqueue_with_priority(Essential, "Hello")
 messages.enqueue_with_priority(Critical, "it's me")
 
-print(messages.dequeue())
-print(messages.dequeue())
-print(messages.dequeue())
-print(messages.dequeue())
-print(messages.dequeue())
+for i in messages:
+    print(i)
