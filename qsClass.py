@@ -23,3 +23,13 @@ class Stack(Queue):
         return self._elements.pop()
     def enqueue(self, element):
         self._elements.append(element)
+
+class PriorityQueue:
+    def __init__(self):
+        self._elements = []
+
+    def enqueue_with_priority(self, priority, value):
+        heappush(self._elements, (priority, value))
+
+    def dequeue(self):
+        return heappop(self._elements)
