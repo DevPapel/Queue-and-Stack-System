@@ -9,11 +9,13 @@ Neutral = 1
 # End of Priority Values #
 
 messages = PriorityQueue()
-messages.enqueue_with_priority(Important, "Windshield wipers turned on")
-messages.enqueue_with_priority(Very_Important, "Radio station tuned in")
-messages.enqueue_with_priority(Essential, "Brake pedal depressed")
-messages.enqueue_with_priority(Critical, "Hazard lights turned on")
+messages.enqueue_with_priority(Important, "after all these years")
+messages.enqueue_with_priority(Very_Important, "I was wondering if")
+messages.enqueue_with_priority(Neutral, "you'd like to meet")
+messages.enqueue_with_priority(Essential, "Hello")
+messages.enqueue_with_priority(Critical, "it's me")
 
+print(messages.dequeue())
 print(messages.dequeue())
 print(messages.dequeue())
 print(messages.dequeue())
