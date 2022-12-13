@@ -9,4 +9,3 @@ for i in FIFO:
     print("Current in line:",i)
 
 print("Updated Queue Count:", len(FIFO))
-
