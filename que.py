@@ -8,3 +8,5 @@ print("Queue Count:",len(FIFO))
 for i in FIFO:
     print("Current in line:",i)
 
+print("Updated Queue Count:", len(FIFO))
+
