@@ -1,4 +1,4 @@
-from queueclass import Queue
+from qsClass import Queue
 
 FIFO = Queue("1", "2")
 FIFO.enqueue("3")
